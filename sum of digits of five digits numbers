@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main(){
+	int num;
+	int sum=0;
+	int ld;
+	scanf("%d",&num);
+	if(num>10000 && num<99999){
+		while(num>0){
+			ld = num%10;
+			sum= sum +ld;
+			num = num/10;
+		}
+		printf("%d",sum);
+	}
+	else printf("Invalid input");
+ 	return 0;
+}
